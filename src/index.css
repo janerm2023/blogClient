@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header a {
+  color: #333;
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+nav span {
+  font-weight: 700;
+}
+
+/* POSTS */
+.post {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  gap: 20px;
+  border-top: 2px solid #e2e2e2;
+  padding: 2rem 0;
+}
+
+.image {
+  width: 100%;
+}
+
+.post a img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.post-content h2 {
+  padding-bottom: 0.6rem;
+  /* margin: 0; */
+  line-height: 24px;
+}
+
+.author {
+  padding-bottom: 0.5rem;
+}
+
+.author span {
+  font-weight: 600;
+  color: #333;
+}
+
+.summary {
+  font-size: 17px;
+}
+
+/* LOGIN & REGISTER */
+form.login h1,
+form.register h1 {
+  text-align: center;
+}
+
+form.login,
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 7rem;
+  gap: 1rem;
+}
+
+form > input,
+button {
+  border: none;
+  outline: none;
+  background: #e2e2e2;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+
+form > button {
+  font-size: 1rem;
+  font-weight: 600;
+  background: #333;
+  color: #fff;
+}
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.postId {
+  padding-top: 2rem;
+}
+
+.postId h2,
+.postId h5,
+.time {
+  text-align: center;
+}
+
+.postId h2 {
+  color: #454545;
+}
+
+.time {
+  font-size: 11px;
+  color: #707070;
+}
+
+.postId h5 {
+  font-size: 11px;
+}
+
+.imageId {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+  padding-top: 1.5rem;
+}
+
+.imageId > img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.contentId {
+  padding: 2rem 0;
+}
+
+.edit-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.edit-btn {
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  background-color: #525151;
+  border-radius: 3px;
+}
+
+.postForm button {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  nav a {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  nav span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .post {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 17px;
+  }
+
+  .post a img {
+    height: 200px;
+  }
+
+  .post-content h2 {
+    font-size: 15px;
+  }
+
+  .author {
+    font-size: 13px;
+  }
+
+  .summary {
+    font-size: 13px;
+  }
+
+  .create-text,
+  .edit-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%;
+  }
+
+  .post-content h2 {
+    font-size: 13px;
+  }
+
+  .summary {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  nav {
+    gap: 5px;
+  }
+
+  nav a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  nav span {
+    font-size: 9px;
+    font-weight: 700;
+  }
+
+  .post {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 8px;
+  }
+
+  .post a img {
+    height: 200px;
+  }
+
+  .post-content h2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .author {
+    font-size: 10px;
+  }
+
+  .summary {
+    font-size: 10px;
+  }
+
+  .create-text,
+  .edit-text {
+    font-size: 0.8rem;
+  }
+
+  form > input,
+  button {
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+  }
+}
